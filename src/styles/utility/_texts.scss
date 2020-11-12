@@ -1,0 +1,12 @@
+.colored {
+  color: darken($fontColor, 5);
+}
+
+.clear {
+  color: $white;
+
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
+}

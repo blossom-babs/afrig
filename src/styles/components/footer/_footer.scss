@@ -1,0 +1,117 @@
+.footer-container {
+  background: $black;
+  color: $white;
+
+  // position: absolute;
+  // bottom: 0;
+  width: 100%;
+  font-size: 18px;
+  font-family: $mainFont;
+
+  h1 {
+    font-family: $secondaryFont;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.footer {
+  width: 90%;
+  margin: 0 auto;
+
+  padding: 2rem 0;
+
+  @media screen and (min-width:$width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__div--one {
+    @media screen and (min-width: $width) {
+      width: 30%;
+    }
+
+    &--p {
+
+      padding: .5rem 0;
+      line-height: 30px;
+    }
+
+    &--socialmedia {
+      padding: 0 0 0 1rem;
+      width: 5rem !important;
+    }
+  }
+
+  &__div--two {
+    @media screen and (max-width: $width) {
+      padding: 1rem 0;
+    }
+
+    &--content {
+      padding-top: .5rem;
+
+      p {
+        padding-bottom: .5rem;
+        line-height: 30px;
+
+      }
+    }
+  }
+
+  &__div--help {
+
+
+    &--content {
+      padding-top: .5rem;
+
+      p {
+        line-height: 30px;
+        padding-bottom: .5rem;
+        cursor: pointer;
+
+        .links {
+          text-decoration: none;
+          color: $white;
+
+          &:hover {
+            color: darken($fontColor, 5);
+            transition: 1.5s ease-in;
+          }
+        }
+      }
+    }
+  }
+}
+
+.icon {
+  cursor: pointer;
+  //color: $fontColor;
+  color: darken($fontColor, 5);
+
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.footer__input {
+  border: 1px solid $white;
+  max-width: max-content;
+  padding: 1rem;
+
+
+  input {
+    background-color: $black;
+    outline: 0;
+    border: none;
+    color: $white;
+  }
+}
+
+.icons {
+  padding-top: 1rem;
+}

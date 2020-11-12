@@ -1,0 +1,63 @@
+.categories-div {
+  font-family: $mainFont;
+  background: $white;
+}
+
+@mixin layout {
+  display: flex;
+  justify-content: center;
+}
+
+.categories {
+  width: 90%;
+  margin: 0 auto;
+
+  padding: 2rem 0;
+
+  &__heading {
+    @include layout;
+  }
+
+  &__grid {
+    @media screen and (min-width: $width) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+    }
+  }
+}
+
+.item__card {
+  padding: 2rem;
+
+  &--img {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+
+    object-fit: cover;
+
+    position: relative;
+  }
+
+  &--btn {
+    background: $mainColor;
+    padding: 1rem 0;
+    color: $white;
+    font-size: larger;
+    max-width: 500px;
+    cursor: pointer;
+    @include layout;
+
+    visibility: hidden;
+  }
+
+  &--label {
+    @include layout;
+    max-width: 500px;
+    font-family: $secondaryFont;
+    font-size: 36px;
+
+    text-transform: capitalize;
+  }
+}

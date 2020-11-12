@@ -1,0 +1,35 @@
+.header {
+
+  &__heading {
+    color: $white;
+    font-family: $secondaryFont;
+    padding-bottom: 2rem;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+
+    @media screen and (max-width: $width) {
+      display: none;
+    }
+  }
+
+  &__btn {
+    @include btnFeature;
+
+    &:hover {
+      background: $white;
+      transition: 1s ease-in;
+    }
+  }
+
+  &__link {
+    color: $white;
+
+    &:hover {
+      color: $fontColor;
+      text-decoration: none;
+      //border: 1px solid $fontColor;
+    }
+  }
+
+
+}

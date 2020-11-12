@@ -1,0 +1,60 @@
+.testimonial-div {
+  font-family: $mainFont;
+}
+
+.testimonial {
+  @include mainLayout;
+
+  &__heading {
+    @include layout;
+    padding: 2rem 0;
+  }
+}
+
+.testiominal__p {
+  @include layout;
+
+}
+
+.testiominal__p:first-child {
+  padding: 1% 0;
+
+
+  @media screen and (min-width: $width) {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+.testimonial__img {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  //width: 50%;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  height: 1px;
+  width: 1px;
+  // outline: $white;
+  //background-size: 100%, 100%;
+  //border-radius: 50%;
+  //border: 1px solid black;
+}
+
+.carousel-control-next-icon:after {
+  content: '>';
+  font-size: 55px;
+  color: $black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: $black;
+}

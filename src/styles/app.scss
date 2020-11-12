@@ -1,0 +1,21 @@
+// CORE
+@import "./core/typography";
+@import "./core/variables";
+@import "./core/overwrite";
+
+@import "~bootstrap/scss/bootstrap";
+
+// COMPONENTS
+@import "./components/navigation/nav";
+@import "./components/footer/footer";
+@import "./components/Header/header";
+@import "./components/Shop/shopnav";
+@import "./components/Shop/catalogue";
+
+// UTILITY
+@import "./utility/texts";
+
+//SUBCOMPONENTS
+@import "./SubComponents/shopcategory";
+@import "./SubComponents/testimonials";
+@import "./SubComponents/founder";

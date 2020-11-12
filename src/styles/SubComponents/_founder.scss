@@ -1,0 +1,56 @@
+.founder-div {
+  font-family: $mainFont;
+  background: $white;
+}
+
+.founder {
+
+  @include mainLayout;
+
+  @media screen and (min-width: $width) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__img {
+
+    img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+
+      max-width: 500px;
+    }
+
+  }
+
+  &__content {
+    padding-top: 10%;
+  }
+
+  &__note {
+    font-size: 18px;
+    line-height: 35px;
+    padding: 2% 0;
+
+  }
+
+  &__btn {
+    @include btnFeature;
+
+
+    &:hover {
+      background: $white;
+      transition: 2s ease-in;
+    }
+
+    &--link {
+      color: $white;
+
+      &:hover {
+        color: $fontColor;
+        text-decoration: none;
+      }
+    }
+  }
+}
