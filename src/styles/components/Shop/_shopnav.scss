@@ -55,29 +55,62 @@
 .catalogue {
   width: 50%;
 
-  padding-top: 7rem;
-
-  @media screen and (min-width: $width) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  @media screen and (min-width: $maxWidth) {
+    width: 60%;
   }
 
+  padding-top: 7rem;
+
+  &__grid {
+    @media screen and (min-width: $width) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 
   &__item {
-    border: 1px solid $black;
+    //border: 1px solid $black;
 
     width: 100%;
     height: 300px;
+
+    margin-bottom: 1rem;
+    position: relative;
+
+    @media screen and (min-width: $maxWidth) {
+      padding-right: 1rem;
+    }
 
     img {
       width: 100%;
       height: 150px;
 
       object-fit: cover;
+
+    }
+
+    &--button {
+      position: absolute;
+      left: 0;
+      bottom: 9.2rem;
+      width: 100%;
+      color: $white;
+      background: $black;
+      border: 1px solid $black;
+      font-size: 16px;
+      visibility: hidden;
+
+
+      @media screen and (min-width: $maxWidth) {
+        width: (100% - 5.3%);
+      }
     }
 
     &--note {
       padding-top: 2rem;
+      border: 1px solid $black;
+
+      text-align: center;
     }
 
     &--price {

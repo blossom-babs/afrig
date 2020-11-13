@@ -6,6 +6,7 @@ $mainColor: linear-gradient(180deg, #B80F0F 99.99%, rgba(11, 29, 2, 0) 100%);
 $fontColor:#B80F0F;
 
 $width: 800px;
+$maxWidth: 1000px;
 
 @mixin mainLayout($margin: 0 auto, $width: 90%, $padding: 2rem 0) {
   margin: $margin;

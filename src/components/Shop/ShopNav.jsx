@@ -36,7 +36,7 @@ function ShopNav() {
         <button className="shop-nav__div--btn">Afri Wears</button>
       </div>
 
-      <div>
+      <div className="catalogue">
         <Catalogue />
       </div>
     </div>
