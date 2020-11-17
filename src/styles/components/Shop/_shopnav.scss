@@ -106,6 +106,7 @@
       }
     }
 
+
     &--note {
       padding-top: 2rem;
       border: 1px solid $black;
@@ -121,6 +122,21 @@
       font-size: smaller;
     }
   }
+}
+
+.catalogue__item--button--active {
+  position: absolute;
+  left: 0;
+  bottom: 9.2rem;
+  width: 100%;
+  color: $white;
+  background: $black;
+  border: 1px solid $black;
+  font-size: 16px;
+  visibility: visible;
 
 
+  @media screen and (min-width: $maxWidth) {
+    width: (100% - 5.3%);
+  }
 }

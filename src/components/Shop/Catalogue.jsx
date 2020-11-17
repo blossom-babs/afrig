@@ -1,42 +1,37 @@
 import React, { useState } from "react"
-import CatalogueItem from "../../data/CatalogueItem"
 
-const data = CatalogueItem
+function Catalogue({ dataPosts }) {
+  const [display, setDisplay] = useState("")
 
-function Catalogue() {
-  const [display, setDisplay] = useState(false)
-  const [hover, setHover] = useState("")
-
-  function showBtn() {
-    setDisplay(true)
+  function showBtn(item) {
+    const num = item.id
+    setDisplay(num)
   }
 
   function hideBtn() {
-    setDisplay(false)
-  }
-
-  function checkClick(item) {
-    const num = item.id
-    console.log(num)
-    //setHover(num)
+    setDisplay("")
   }
 
   return (
     <div className="catalogue__grid">
-      {data.map(item => (
+      {dataPosts.map(item => (
         <div
           key={item.id}
-          onMouseOver={showBtn}
+          onMouseOver={() => showBtn(item)}
           onMouseOut={hideBtn}
           onFocus={() => void 0}
           onBlur={() => void 0}
-          role="div"
+          role="button"
+          tabIndex={0}
           className="catalogue__item"
         >
-          <img onClick={checkClick(item)} src={item.src} alt={item.alt} />
+          <img src={item.src} alt={item.alt} />
           <button
-            style={{ visibility: display && "visible" }}
-            className="catalogue__item--button"
+            className={
+              display === item.id
+                ? "catalogue__item--button--active"
+                : "catalogue__item--button"
+            }
           >
             Shop look
           </button>

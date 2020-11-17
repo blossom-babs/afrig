@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import Catalogue from "./Catalogue"
+import App from "./App"
 
 function ShopNav() {
   const [email, setEmail] = useState("")
@@ -37,7 +37,7 @@ function ShopNav() {
       </div>
 
       <div className="catalogue">
-        <Catalogue />
+        <App />
       </div>
     </div>
   )
