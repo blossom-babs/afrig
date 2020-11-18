@@ -61,3 +61,15 @@
     text-transform: capitalize;
   }
 }
+
+.item__card--active {
+  background: $mainColor;
+  padding: 1rem 0;
+  color: $white;
+  font-size: larger;
+  max-width: 500px;
+  cursor: pointer;
+  @include layout;
+
+  visibility: visible;
+}

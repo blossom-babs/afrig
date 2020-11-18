@@ -4,13 +4,19 @@
   font-size: 18px;
   font-family: $mainFont;
 
-  display: flex;
-  justify-content: space-between;
+  @media screen and (min-width:$width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
 }
 
 .shop-nav__div {
 
-  width: 30%;
+  @media screen and (min-width:$width) {
+    width: 30%;
+  }
+
 
   &--search {
     border: 1px solid $black;
@@ -53,7 +59,10 @@
 }
 
 .catalogue {
-  width: 50%;
+
+  @media screen and (min-width:$width) {
+    width: 50%;
+  }
 
   @media screen and (min-width: $maxWidth) {
     width: 60%;
@@ -93,7 +102,7 @@
       position: absolute;
       left: 0;
       bottom: 9.2rem;
-      width: 100%;
+      //width: 100%;
       color: $white;
       background: $black;
       border: 1px solid $black;
@@ -101,9 +110,9 @@
       visibility: hidden;
 
 
-      @media screen and (min-width: $maxWidth) {
-        width: (100% - 5.3%);
-      }
+      // @media screen and (min-width: $maxWidth) {
+      //   width: (100% - 5.3%);
+      // }
     }
 
 
@@ -135,8 +144,11 @@
   font-size: 16px;
   visibility: visible;
 
-
   @media screen and (min-width: $maxWidth) {
-    width: (100% - 5.3%);
+    width: 92%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: (94%);
   }
 }

@@ -48,7 +48,7 @@
     &:hover {
       cursor: pointer;
       color: $fontColor;
-      text-decoration: underline $fontColor;
+      text-decoration: line-through $fontColor;
       transition: 1s ease-in;
     }
   }

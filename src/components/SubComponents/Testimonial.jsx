@@ -11,7 +11,7 @@ function Testimonial() {
         <h1 className="testimonial__heading">
           What Our shoppers are saying about us
         </h1>
-        <Carousel indicators={false}>
+        <Carousel indicators={true}>
           {data.map((item, index) => (
             <Carousel.Item key={index}>
               <p className="testiominal__p">{item.story}</p>

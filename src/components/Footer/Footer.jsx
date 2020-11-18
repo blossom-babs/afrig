@@ -23,7 +23,7 @@ function Footer() {
           </p>
           <div className="footer__input">
             <input type="text" placeholder="Email Address" />
-            <button>subscribe</button>
+            <button className="footer__input--button">subscribe</button>
           </div>
           <div className="icons">
             <Link className="icon" to="/">
