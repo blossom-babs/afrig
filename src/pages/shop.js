@@ -8,7 +8,14 @@ function shop() {
   return (
     <DefaultLayout>
       <div>
-        <Hero src={Image} alt="Shop" content="Afrig / Shop" />
+        <Hero
+          src={Image}
+          alt="Shop"
+          content="Shop / Afrig
+        
+        
+        "
+        />
         <ShopNav />
       </div>
     </DefaultLayout>
