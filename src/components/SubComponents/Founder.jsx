@@ -10,14 +10,16 @@ function Founder() {
           <img src={CEO} alt="ceo" />
         </div>
         <div className="founder__content">
-          <h1 className="founder__title">Class and Comfort</h1>
+          <h1 className="founder__title">African Grace</h1>
           <p className="founder__note">
-            Anita Alawode on what birthed AfriG and <br /> what she aims to
-            achiever with her designs...
+            Afri-G fully means African Grace.
+            <br />
+            Afri-G is a fashion brand that portrays Africa, Grace, Fashion,
+            Youth and Grace.
           </p>
           <button className="founder__btn">
             <Link to="/about" className="founder__btn--link">
-              Meet Our Founder
+              Meet The Fab Team
             </Link>
           </button>
         </div>

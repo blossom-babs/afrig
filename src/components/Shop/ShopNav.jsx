@@ -19,21 +19,25 @@ function ShopNav() {
   return (
     <div className="shop">
       <div className="shop-nav__div">
-        <div className="shop-nav__div--search">
-          <input onChange={handleMail} type="text" />
-          <button onClick={handleSubmit} type="submit">
-            Search
-          </button>
+        <div className="">
+          <div className="shop-nav__div--search flex__class">
+            <input
+              onChange={handleMail}
+              type="text"
+              placeholder="Type an item"
+            />
+            <button onClick={handleSubmit} type="submit">
+              Search
+            </button>
+          </div>
+          <h1 className="shop-nav__div--title">Categories</h1>
         </div>
-
-        <h1 className="shop-nav__div--title">Categories</h1>
-
-        <button className="shop-nav__div--btn">Afri Tops</button>
         <button className="shop-nav__div--btn">Afri Scarves</button>
-        <button className="shop-nav__div--btn">Afri Kimono</button>
-        <button className="shop-nav__div--btn">Afri Capes</button>
-        <button className="shop-nav__div--btn">Afri Accessories</button>
-        <button className="shop-nav__div--btn">Afri Wears</button>
+        <button className="shop-nav__div--btn">Afri Casual wears</button>
+        <button className="shop-nav__div--btn">Afri Kimonos</button>
+        <button className="shop-nav__div--btn">Afri Bags</button>
+        <button className="shop-nav__div--btn">Afri Attachables</button>
+        <button className="shop-nav__div--btn">Afri Custom Orders</button>
       </div>
 
       <div className="catalogue">

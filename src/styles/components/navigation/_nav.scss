@@ -5,7 +5,6 @@
 
   padding: 2rem 0;
 
-  overflow: hidden;
 }
 
 .nav {
@@ -22,18 +21,72 @@
     }
   }
 
+  &__mobile--control {
+    cursor: pointer;
+
+    @media screen and (min-width: $width) {
+      display: none;
+    }
+  }
+
   &__menu {
 
     &--items {
-      display: flex;
-      justify-content: space-around;
+      list-style-type: none;
+
+      @media screen and (max-width:$width) {
+        position: absolute;
+        left: 20rem;
+        top: 5rem;
+        padding: 5rem;
+
+        width: 100%;
+        height: 100vh;
+
+        background: $mainColor;
+        color: white;
+
+        transition: all 1s linear;
+        z-index: 1;
+
+        transform: translateX(0px);
+        clip-path: ellipse(77% 61% at 50% 39%);
+
+        &-in {
+
+          transform: translatY(0);
+          //display: none;
+        }
+
+        &-out {
+          transform: translateY(-1000px);
+
+
+        }
+
+      }
+
+
+
+      @media screen and (min-width:800px) {
+        display: flex;
+        justify-content: space-around;
+
+      }
+
 
       width: 100%;
 
-      list-style-type: none;
+
 
       li {
         padding: 0 1rem;
+        cursor: pointer;
+
+        @media screen and (max-width:800px) {
+          padding: 2rem 0;
+          background-color: $mainColor;
+        }
       }
 
     }
@@ -45,11 +98,20 @@
     color: $black;
 
 
+    @media screen and (max-width:800px) {
+      color: $white;
+    }
+
     &:hover {
-      cursor: pointer;
+
       color: $fontColor;
-      text-decoration: line-through $fontColor;
+      text-decoration: underline $fontColor;
       transition: 1s ease-in;
+
+      @media screen and (max-width:800px) {
+        color: $white;
+        text-decoration: underline $white;
+      }
     }
   }
 }

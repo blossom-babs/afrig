@@ -48,18 +48,18 @@ export default function About() {
         </p>
         <ul className="about__lists">
           <li className="about__lists--links">
-            AfriG scarves, Ankara turbans and face caps
+            Afri scarves, Ankara turbans and face caps
           </li>
-          <li className="about__lists--links">AfriG casual wears</li>
-          <li className="about__lists--links">AfriG Kimonos</li>
-          <li className="about__lists--links">AfriG bags</li>
-          <li className="about__lists--links">AfriG attachables</li>
-          <li className="about__lists--links">AfriG custom orders</li>
+          <li className="about__lists--links">Afri Casual wears</li>
+          <li className="about__lists--links">Afri Kimonos</li>
+          <li className="about__lists--links">Afri Bags</li>
+          <li className="about__lists--links">Afri Attachables</li>
+          <li className="about__lists--links">Afri Custom orders</li>
         </ul>
       </div>
 
       <div className="about__team">
-        <h1 className="about__team--header">The Afrig team</h1>
+        <h1 className="about__team--header">The Fab team</h1>
         <p className="about__team--tagline">Meet the spectacular seven</p>
 
         <div className="about__team--members">
