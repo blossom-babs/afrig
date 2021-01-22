@@ -104,6 +104,12 @@
 
       object-fit: cover;
 
+      &:hover {
+        transform: scale(1.5);
+        transition: all .5s;
+      }
+
+
     }
 
     &--button {

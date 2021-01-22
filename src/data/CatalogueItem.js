@@ -1,101 +1,117 @@
-import Img from "../images/anita.png"
+//import Img from "../images/anita.png"
+
+//turbans
+import turbanOne from "../images/products/Afri Ankara Turbans/TurbanVicFive.jpg"
+import turbanTwo from "../images/products/Afri Ankara Turbans/VicAndTeeTurban.jpg"
+import turbanThree from "../images/products/Afri Ankara Turbans/turbTrezSix.jpg"
+import turban from "../images/products/Afri Ankara Turbans/vicAndTeeTurbanFive.jpg"
+// attachables
+import attachOne from "../images/products/Afri Attachables/attachGroupThree.jpg"
+import attach from "../images/products/Afri Attachables/attachTeeEight.jpg"
+import attachTwo from "../images/products/Afri Attachables/attachgroup.jpg"
+import attachThree from "../images/products/Afri Attachables/attachTeeFour.jpg"
+// Bags
+import bag from "../images/products/Afri Bags/bagTNine.jpg"
+import bagOne from "../images/products/Afri Bags/bagTTeight.jpg"
+import bagTwo from "../images/products/Afri Bags/bagVTfive.jpg"
+import bagThree from "../images/products/Afri Bags/bagVone.jpg"
 
 const CatalogueItem = [
   {
     id: 1,
-    src: Img,
+    src: turban,
     alt: "img",
-    title: "Two satire Kimono",
-    main: "Afri Kimono",
-    price: "5000",
+    title: "two-piece ankara",
+    main: "Afri ankara turban",
+    price: "N/A",
   },
   {
     id: 2,
-    src: Img,
+    src: attach,
     alt: "img",
-    title: "Two satire Kimono",
-    main: "Afri Kimono",
-    price: "5000",
+    title: "buttoned tops",
+    main: "Afri attachables",
+    price: "N/A",
   },
   {
     id: 3,
-    src: Img,
+    src: bag,
     alt: "img",
-    title: "Two satire Kimono",
-    main: "Afri Kimono",
-    price: "5000",
+    title: "ankara totes",
+    main: "Afri bags",
+    price: "N/A",
   },
   {
     id: 4,
-    src: Img,
+    src: turbanOne,
     alt: "img",
-    title: "Two satire Kimono",
-    main: "Afri Kimono",
-    price: "5000",
+    title: "two piece turban",
+    main: "Afri Ankara turban",
+    price: "N/A",
   },
   {
     id: 5,
-    src: Img,
+    src: attachOne,
     alt: "img",
-    title: "Two satire Kimono",
-    main: "Afri Kimono",
-    price: "5000",
+    title: "peplun styled",
+    main: "Afri attachables",
+    price: "N/A",
   },
   {
     id: 6,
-    src: Img,
+    src: bagOne,
     alt: "img",
-    title: "Three satire Kimono",
-    main: "Afri Skirt",
-    price: "2000",
+    title: "the business bag",
+    main: "Afri Bags",
+    price: "N/A",
   },
   {
     id: 7,
-    src: Img,
+    src: turbanTwo,
     alt: "img",
-    title: "Three satire Kimono",
-    main: "Afri Skirt",
-    price: "2000",
+    title: "two piece turban",
+    main: "Afri Ankara turban",
+    price: "N/A",
   },
   {
     id: 8,
-    src: Img,
+    src: attachTwo,
     alt: "img",
-    title: "Three satire Kimono",
-    main: "Afri Skirt",
-    price: "2000",
+    title: "peplun styled",
+    main: "Afri Attachables",
+    price: "N/A",
   },
   {
     id: 9,
-    src: Img,
+    src: bagTwo,
     alt: "img",
-    title: "Two satire Kimono",
-    main: "Afri Kimono",
-    price: "5000",
+    title: "ankara print",
+    main: "Afri Bags",
+    price: "N/A",
   },
   {
     id: 10,
-    src: Img,
+    src: turbanThree,
     alt: "img",
-    title: "Two satire Kimono",
-    main: "Afri Kimono",
-    price: "5000",
+    title: "two piece turban",
+    main: "Afri Ankara turban",
+    price: "N/A",
   },
   {
     id: 11,
-    src: Img,
+    src: attachThree,
     alt: "img",
-    title: "Two satire Kimono",
-    main: "Afri Kimono",
-    price: "5000",
+    title: "peplun and sleeve",
+    main: "Afri attachables",
+    price: "N/A",
   },
   {
     id: 12,
-    src: Img,
+    src: bagThree,
     alt: "img",
-    title: "Two satire Kimono",
-    main: "Afri Kimono",
-    price: "5000",
+    title: "ankara totes",
+    main: "Afri Bags",
+    price: "N/A",
   },
 ]
 

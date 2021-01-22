@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from "gatsby"
 
 function Catalogue({ dataPosts }) {
   const [display, setDisplay] = useState("")
@@ -26,15 +27,18 @@ function Catalogue({ dataPosts }) {
           className="catalogue__item"
         >
           <img src={item.src} alt={item.alt} />
-          <button
-            className={
-              display === item.id
-                ? "catalogue__item--button--active"
-                : "catalogue__item--button"
-            }
-          >
-            Shop look
-          </button>
+          <Link to="/https://api.whatsapp.com/send?phone=+2349059301192">
+            <button
+              href="google.com"
+              className={
+                display === item.id
+                  ? "catalogue__item--button--active"
+                  : "catalogue__item--button"
+              }
+            >
+              Shop look
+            </button>
+          </Link>
           <div className="catalogue__item--note">
             <div>
               <p>{item.title}</p>

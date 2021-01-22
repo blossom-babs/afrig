@@ -1,10 +1,10 @@
-import Top from "../images/top.png"
+//import Top from "../images/top.png"
 
 // Scarves
 import Scarves from "../images/products/Afri Scarfs/scarvePaster.jpg"
 import Casual from "../images/products/Afri Casuals/casualOne.jpg"
 import Kimono from "../images/products/Afri Kimonos/kimonoTwo.jpg"
-import Bag from "../images/products/Afri Bags/bagOne.jpg"
+import Bag from "../images/products/Afri Bags/bagTTone.jpg"
 import Attachable from "../images/products/Afri Attachables/attachableOne.jpg"
 import Custom from "../images/products/Afri Ankara Turbans/customOne.png"
 
