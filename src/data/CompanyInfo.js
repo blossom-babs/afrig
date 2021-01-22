@@ -13,7 +13,7 @@ const CompanyInfo = [
   },
   {
     span_one: "Website",
-    span_two: "",
+    span_two: "https://afrig.netlify.app/",
   },
 ]
 
